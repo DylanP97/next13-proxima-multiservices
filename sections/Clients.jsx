@@ -6,7 +6,7 @@ import 'react-multi-carousel/lib/styles.css';
 import styles from '../styles';
 
 import ClientCard from '../components/ClientCard';
-import { customersLogos } from '../public/customers';
+import { customersLogos } from '../constants/index';
 import { TitleText, TypingText } from '../components';
 import { staggerContainer } from '../utils/motion';
 

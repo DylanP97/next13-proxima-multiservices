@@ -15,9 +15,7 @@ const styles = {
 
   // hero section
   heroHeading:
-      'font-bold lg:text-[115px] md:text-[80px] sm:text-[48px] text-[35px] lg:leading-[127px] md:leading-[92px] sm:leading-[60px] leading-[52px] uppercase text-[#c3800b] z-5 relative top-[20px]',
-  heroHeading2:
-      'font-bold lg:text-[115px] md:text-[80px] sm:text-[48px] text-[35px] lg:leading-[127px] md:leading-[92px] sm:leading-[60px] leading-[52px] uppercase text-[#131789] z-10',
+      'font-bold lg:text-[115px] md:text-[80px] sm:text-[48px] text-[35px] lg:leading-[127px] md:leading-[92px] sm:leading-[60px] leading-[52px] uppercase z-5 relative top-[20px] bg-gradient-to-l from-blue-800 via-orange-600 text-transparent bg-clip-text text-right',
   heroDText:
       'md:w-[212px] sm:w-[80px] w-[60px] md:h-[108px] sm:h-[48px] h-[38px] md:border-[18px] border-[9px] rounded-r-[50px] border-white sm:mx-2 mx-[6px]',
 };

@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 
-import Image from 'next/image';
 import styles from '../styles';
 import { footerVariants } from '../utils/motion';
 
@@ -18,7 +17,7 @@ const Footer = () => (
     <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
       <div className="flex flex-col">
         <div className="flex items-center justify-between flex-wrap gap-4">
-          <Image
+          <img
             src="/interface/proxima-logo.png"
             width={400}
             height={400}
