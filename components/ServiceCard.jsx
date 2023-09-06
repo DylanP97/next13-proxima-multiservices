@@ -6,6 +6,7 @@ import styles from '../styles';
 import { fadeIn } from '../utils/motion';
 
 const ServiceCard = ({ id, imgUrl, title, icon, index, active, handleClick }) => (
+
   <motion.div
     variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
     className={`relative ${

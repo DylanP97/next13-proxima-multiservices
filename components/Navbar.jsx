@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, AnimatePresence } from 'framer-motion'; // Import AnimatePresence
+import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 
 import styles from '../styles';
@@ -18,8 +18,7 @@ const Navbar = () => {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      exit="show"
-      className={`${styles.xPaddings} py-8 relative`}
+      className={`${styles.xPaddings} py-8`}
     >
       <div className={`${styles.innerWidth} mx-auto flex justify-start gap-14`}>
         <img
@@ -29,7 +28,6 @@ const Navbar = () => {
           onClick={toggleMobileNav}
         />
         <div className="hidden md:flex justify-start gap-14">
-          {/* Use <a> tags with href attributes pointing to the respective IDs */}
           <a href="#apropos" className="hover:cursor-pointer underline-animation font-extrabold text-[20px] leading-[24px] text-black">À Propos</a>
           <a href="#services" className="hover:cursor-pointer underline-animation font-extrabold text-[20px] leading-[24px] text-black">Nos Prestations</a>
           <a href="#clients" className="hover:cursor-pointer underline-animation font-extrabold text-[20px] leading-[24px] text-black">Ils nous font confiance</a>
@@ -45,11 +43,10 @@ const Navbar = () => {
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           >
-            {/* Use <a> tags with href attributes pointing to the respective IDs */}
-            <a href="#apropos" className="hover:cursor-pointer underline-animation font-extrabold text-[20px] leading-[24px] text-black">À Propos</a>
-            <a href="#services" className="hover:cursor-pointer underline-animation font-extrabold text-[20px] leading-[24px] text-black">Nos Prestations</a>
-            <a href="#trust" className="hover:cursor-pointer underline-animation font-extrabold text-[20px] leading-[24px] text-black">Ils nous font confiance</a>
-            <a href="#contact" className="hover:cursor-pointer underline-animation font-extrabold text-[20px] leading-[24px] text-black">Contact</a>
+            <a href="#apropos" className="hover:cursor-pointer font-extrabold text-[20px] leading-[24px] text-black">À Propos</a>
+            <a href="#services" className="hover:cursor-pointer font-extrabold text-[20px] leading-[24px] text-black">Nos Prestations</a>
+            <a href="#clients" className="hover:cursor-pointer font-extrabold text-[20px] leading-[24px] text-black">Ils nous font confiance</a>
+            <a href="#contact" className="hover:cursor-pointer font-extrabold text-[20px] leading-[24px] text-black">Contact</a>
           </motion.div>
         )}
       </AnimatePresence>
