@@ -1,4 +1,4 @@
 
-const Page = () => <div className="bg-primary-black overflow-hidden" />;
+const Page = () => <div />;
 
 export default Page;

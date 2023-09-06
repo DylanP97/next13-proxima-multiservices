@@ -12,20 +12,20 @@ const Services = () => {
   const [active, setActive] = useState('prestation-1');
 
   return (
-    <section className={`${styles.paddings}`} id="services">
+    <section className={`z-20 ${styles.paddings}`} id="services">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-col`}
+        className={`${styles.innerWidth} mx-auto flex flex-col z-20`}
       >
         <TypingText title="| Nos Prestations" textStyles="text-center" />
         <TitleText
           title={
             (
               <>
-                Faîtes confiance en notre<br className="md:block hidden" />
+                Faîtes confiance en notre<br className="z-20 md:block hidden" />
                 {' '} expertise
               </>
             )

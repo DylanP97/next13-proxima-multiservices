@@ -38,7 +38,7 @@ const Hero = ({ hourGiven }) => {
     if (hour >= 19 && hour < 21) {
       return imgParisEvening;
     }
-    if (hour >= 21 && hour < 0) {
+    if (hour >= 21 && hour <= 23) {
       return imgParisLateEvening;
     }
     return imgParisDefault;
@@ -66,7 +66,7 @@ const Hero = ({ hourGiven }) => {
     if (hour >= 19 && hour < 21) {
       return 'Belle soirée.';
     }
-    if (hour >= 21 && hour < 0) {
+    if (hour >= 21 && hour <= 23) {
       return 'À demain !';
     }
     return 'Bienvenue';
@@ -89,14 +89,14 @@ const Hero = ({ hourGiven }) => {
 
         <motion.div
           variants={slideIn('right', 'tween', 0.2, 1)}
-          className="relative w-full md:-mt-[20px] -mt-[12px]"
+          className="relative w-full md:-mt-[20px] -mt-[12px] overflow-hidden"
         >
           <img
             src={getImageDynamically(hourGiven)}
             alt="cover"
             className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
           />
-          <p className="absolute font-extrabold text-white top-[30px] right-[30px] z-20">
+          <p className="absolute font-extrabold text-white bg-blue-800 px-2 top-[30px] right-[30px] z-20">
             {getTextDynamically(hourGiven)}
           </p>
           <a href="#services">

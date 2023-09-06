@@ -11,6 +11,11 @@
 # next.js
 /.next/
 /out/
+/out.rar
+out.rar
+.rar
+/.rar
+out
 
 # production
 /build

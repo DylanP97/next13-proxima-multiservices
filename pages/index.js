@@ -25,11 +25,11 @@ const Page = () => {
   });
 
   return (
-    <div className="bg-primary-white overflow-hidden">
+    <div className="bg-primary-white">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="relative"
+        className="relative overflow-hidden"
       >
         <Navbar />
         <Hero hourGiven={currentHour} />
@@ -38,13 +38,13 @@ const Page = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="relative"
+          className="relative overflow-hidden"
         >
           <About />
-          <div className="gradient-03 z-0" />
+          <div className="gradient-03 z-0 overflow-hidden" />
           <Services />
           <GetStarted />
-          <div className="gradient-04 z-0" />
+          <div className="gradient-04 z-0 overflow-hidden" />
           <Contact />
         </motion.div>
       </AnimatePresence>
@@ -57,7 +57,7 @@ const Page = () => {
           exit={{ opacity: 0 }}
           className="relative"
         >
-          <div className="gradient-04 z-0" />
+          {/* <div className="gradient-04 z-0" /> */}
           {/* <Feedback /> */}
         </motion.div>
       </AnimatePresence>

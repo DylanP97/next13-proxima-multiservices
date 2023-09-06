@@ -12,8 +12,7 @@ const Footer = () => (
     whileInView="show"
     className={`${styles.paddings} py-8 relative`}
   >
-    <div className="footer-gradient" />
-
+    {/* <div className="footer-gradient" /> */}
     <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
       <div className="flex flex-col">
         <div className="flex items-center justify-between flex-wrap gap-4">
@@ -21,6 +20,7 @@ const Footer = () => (
             src="/interface/proxima-logo.png"
             width={400}
             height={400}
+            alt="logo Proxima Multiservices"
           />
           {/* <h4 className="font-extrabold text-[24px] text-black">Proxima Multiservices</h4> */}
           <div className="flex flex-col md:flex-row gap-4">

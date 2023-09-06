@@ -14,15 +14,15 @@ const About = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
+      className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col z-20`}
     >
       <TypingText title="| À Propos" textStyles="text-center" />
 
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
-        className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center"
+        className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center z-20"
       >
-        <span className="font-extrabold text-black">Proxima Multiservices</span> est une société de nettoyage courant de bâtiment sur Paris et Île de France. Nous sommes une une entreprise spécialisée dans le <span className="font-extrabold text-black">nettoyage et l&apos;entretien</span> de bureaux d'entreprises. Nous assurons le nettoyage des locaux de votre société <span className="font-extrabold text-black">par une équipe compétente</span> dans le domaine.
+        <span className="font-extrabold text-black z-20">Proxima Multiservices</span> est une société de nettoyage courant de bâtiment sur Paris et Île de France. Nous sommes une une entreprise spécialisée dans le <span className="font-extrabold text-black">nettoyage et l&apos;entretien</span> de bureaux d'entreprises. Nous assurons le nettoyage des locaux de votre société <span className="font-extrabold text-black">par une équipe compétente</span> dans le domaine.
       </motion.p>
       <motion.img
         variants={fadeIn('up', 'tween', 0.3, 1)}

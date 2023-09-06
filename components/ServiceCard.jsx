@@ -12,7 +12,7 @@ const ServiceCard = ({ id, imgUrl, title, icon, index, active, handleClick }) =>
     className={`relative ${
       active === id ? 'xl:flex-[3.5] flex-[10]' : 'xl:flex-[0.5] flex-[2]'
     } flex items-center justify-center min-w-[170px]
-    h-[600px] transition-[flex] duration-[1.3s]
+    h-[600px] transition-[flex] duration-[0.8s] z-20
     ease-out-flex cursor-pointer`}
     onClick={() => handleClick(id)}
   >
@@ -25,7 +25,7 @@ const ServiceCard = ({ id, imgUrl, title, icon, index, active, handleClick }) =>
     {active !== id ? (
       <h3
         className="font-semibold sm:text-[26px]
-        text-[18px] text-white absolute z-0
+        text-[18px] text-white absolute z-20
         xl:rotate-[-90deg]"
       >
         {title}

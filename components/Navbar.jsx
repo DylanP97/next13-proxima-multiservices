@@ -30,8 +30,8 @@ const Navbar = () => {
         <div className="hidden md:flex justify-start gap-14">
           <a href="#apropos" className="hover:cursor-pointer underline-animation font-extrabold text-[20px] leading-[24px] text-black">À Propos</a>
           <a href="#services" className="hover:cursor-pointer underline-animation font-extrabold text-[20px] leading-[24px] text-black">Nos Prestations</a>
-          <a href="#clients" className="hover:cursor-pointer underline-animation font-extrabold text-[20px] leading-[24px] text-black">Ils nous font confiance</a>
           <a href="#contact" className="hover:cursor-pointer underline-animation font-extrabold text-[20px] leading-[24px] text-black">Contact</a>
+          <a href="#clients" className="hover:cursor-pointer underline-animation font-extrabold text-[20px] leading-[24px] text-black">Ils nous font confiance</a>
         </div>
       </div>
       <AnimatePresence>
@@ -45,8 +45,8 @@ const Navbar = () => {
           >
             <a href="#apropos" className="hover:cursor-pointer font-extrabold text-[20px] leading-[24px] text-black">À Propos</a>
             <a href="#services" className="hover:cursor-pointer font-extrabold text-[20px] leading-[24px] text-black">Nos Prestations</a>
-            <a href="#clients" className="hover:cursor-pointer font-extrabold text-[20px] leading-[24px] text-black">Ils nous font confiance</a>
             <a href="#contact" className="hover:cursor-pointer font-extrabold text-[20px] leading-[24px] text-black">Contact</a>
+            <a href="#clients" className="hover:cursor-pointer font-extrabold text-[20px] leading-[24px] text-black">Ils nous font confiance</a>
           </motion.div>
         )}
       </AnimatePresence>
