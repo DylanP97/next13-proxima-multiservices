@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
+import Image from 'next/image';
 
 import styles from '../styles';
 import { navVariants } from '../utils/motion';
@@ -21,11 +22,13 @@ const Navbar = () => {
       className={`${styles.xPaddings} py-8`}
     >
       <div className={`${styles.innerWidth} mx-auto flex justify-start gap-14`}>
-        <img
-          src="interface/menu.png"
+        <Image
+          src="/interface/menu.png"
           alt="menu"
           className="w-[24px] h-24px object-contain ml-auto hover:cursor-pointer md:hidden"
           onClick={toggleMobileNav}
+          height={20}
+          width={20}
         />
         <div className="hidden md:flex justify-start gap-14">
           <a href="#apropos" className="hover:cursor-pointer underline-animation font-extrabold text-[20px] leading-[24px] text-black">À Propos</a>

@@ -13,7 +13,6 @@ const styles = {
   flexEnd: 'flex justify-end',
   navPadding: 'pt-[98px]',
 
-  // hero section
   heroHeading:
       'font-bold lg:text-[115px] md:text-[80px] sm:text-[48px] text-[35px] lg:leading-[127px] md:leading-[92px] sm:leading-[60px] leading-[52px] uppercase z-5 relative top-[20px] bg-gradient-to-l from-blue-800 via-orange-600 text-transparent bg-clip-text text-right',
   heroDText:

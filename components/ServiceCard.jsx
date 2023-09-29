@@ -2,10 +2,11 @@
 
 import { motion } from 'framer-motion';
 
+import Image from 'next/image';
 import styles from '../styles';
 import { fadeIn } from '../utils/motion';
 
-const ServiceCard = ({ id, imgUrl, title, icon, index, active, handleClick }) => (
+const ServiceCard = ({ id, imgUrl, title, iconUrl, index, active, handleClick }) => (
 
   <motion.div
     variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
@@ -16,9 +17,11 @@ const ServiceCard = ({ id, imgUrl, title, icon, index, active, handleClick }) =>
     ease-out-flex cursor-pointer`}
     onClick={() => handleClick(id)}
   >
-    <img
+    <Image
       src={imgUrl}
       alt={title}
+      width={600}
+      height={600}
       className={`absolute w-full h-full object-cover
       rounded-[24px] ${active === id ? 'brightness-100' : 'brightness-50'}`}
     />
@@ -35,9 +38,11 @@ const ServiceCard = ({ id, imgUrl, title, icon, index, active, handleClick }) =>
         <div
           className={`${styles.flexCenter} w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]`}
         >
-          <img
-            src={icon}
-            alt="icon"
+          <Image
+            src={iconUrl}
+            alt={iconUrl}
+            width={60}
+            height={60}
             className="w-1/2 h-1/2 object-contain transition-shadow"
           />
         </div>

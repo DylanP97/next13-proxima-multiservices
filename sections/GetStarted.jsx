@@ -3,6 +3,7 @@
 
 import { motion } from 'framer-motion';
 
+import Image from 'next/image';
 import styles from '../styles';
 import { staggerContainer, planetVariants, fadeIn } from '../utils/motion';
 import { StartSteps, TitleText, TypingText } from '../components';
@@ -14,7 +15,7 @@ const GetStarted = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col
       lg:flex-row gap-8
       `}
@@ -23,10 +24,12 @@ const GetStarted = () => (
         variants={planetVariants('left')}
         className={`flex-1 ${styles.flexCenter}`}
       >
-        <img
+        <Image
           src="/interface/3dimages17.png"
           alt="get-started"
           className="w-[90%] h-[90%] object-contain"
+          width={500}
+          height={500}
         />
       </motion.div>
       <motion.div

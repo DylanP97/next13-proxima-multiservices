@@ -2,19 +2,20 @@
 
 import { motion } from 'framer-motion';
 
+import Image from 'next/image';
 import styles from '../styles';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 
 const Hero = ({ hourGiven }) => {
-  const imgParisEarlyMorning = 'interface/paris-earlymorning.jpg';
-  const imgParisMorning = 'interface/paris-morning.jpg';
-  const imgParisNoon = 'interface/paris-noon.jpg';
-  const imgParisAfternoon = 'interface/paris-afternoon.jpg';
-  const imgParisLateAfternoon = 'interface/paris-lateafternoon.jpg';
-  const imgParisEvening = 'interface/paris-evening.jpg';
-  const imgParisLateEvening = 'interface/paris-lateevening.jpg';
-  const imgParisNight = 'interface/paris-night.jpg';
-  const imgParisDefault = 'interface/paris-default.jpg';
+  const imgParisEarlyMorning = '/interface/paris-earlymorning.jpg';
+  const imgParisMorning = '/interface/paris-morning.jpg';
+  const imgParisNoon = '/interface/paris-noon.jpg';
+  const imgParisAfternoon = '/interface/paris-afternoon.jpg';
+  const imgParisLateAfternoon = '/interface/paris-lateafternoon.jpg';
+  const imgParisEvening = '/interface/paris-evening.jpg';
+  const imgParisLateEvening = '/interface/paris-lateevening.jpg';
+  const imgParisNight = '/interface/paris-night.jpg';
+  const imgParisDefault = '/interface/paris-default.jpg';
 
   function getImageDynamically(hour) {
     if (hour >= 0 && hour < 6) {
@@ -91,20 +92,24 @@ const Hero = ({ hourGiven }) => {
           variants={slideIn('right', 'tween', 0.2, 1)}
           className="relative w-full md:-mt-[20px] -mt-[12px] overflow-hidden"
         >
-          <img
+          <Image
             src={getImageDynamically(hourGiven)}
             alt="cover"
             className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
+            height={1080}
+            width={1920}
           />
           <p className="absolute font-extrabold text-white bg-blue-800 px-2 top-[30px] right-[30px] z-20">
             {getTextDynamically(hourGiven)}
           </p>
           <a href="#services">
             <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10">
-              <img
-                src="interface/stamp3.png"
+              <Image
+                src="/interface/stamp3.png"
                 alt="stamp"
                 className="sm:w-[170px] w-[100px] sm:h[170px] h-[100px] object-contain"
+                width={200}
+                height={200}
               />
             </div>
           </a>

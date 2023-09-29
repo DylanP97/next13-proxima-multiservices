@@ -44,7 +44,6 @@ const Clients = () => {
         <Carousel
           transitionDuration={0}
           autoPlaySpeed={1000}
-          rtl
           autoPlay
           responsive={responsive}
           infinite
